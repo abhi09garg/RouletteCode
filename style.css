@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.roulette-container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.wallet {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.wheel-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.wheel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(
+    red 0deg 10deg,
+    black 10deg 20deg,
+    red 20deg 30deg,
+    black 30deg 40deg,
+    red 40deg 50deg,
+    black 50deg 60deg,
+    red 60deg 70deg,
+    black 70deg 80deg,
+    red 80deg 90deg,
+    black 90deg 100deg,
+    red 100deg 110deg,
+    black 110deg 120deg,
+    red 120deg 130deg,
+    black 130deg 140deg,
+    red 140deg 150deg,
+    black 150deg 160deg,
+    red 160deg 170deg,
+    black 170deg 180deg,
+    red 180deg 190deg,
+    black 190deg 200deg,
+    red 200deg 210deg,
+    black 210deg 220deg,
+    red 220deg 230deg,
+    black 230deg 240deg,
+    red 240deg 250deg,
+    black 250deg 260deg,
+    red 260deg 270deg,
+    black 270deg 280deg,
+    red 280deg 290deg,
+    black 290deg 300deg,
+    red 300deg 310deg,
+    black 310deg 320deg,
+    red 320deg 330deg,
+    black 330deg 340deg,
+    red 340deg 350deg,
+    black 350deg 360deg
+  );
+}
+
+.number-label {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 10px; /* Smaller font for better visibility */
+  font-weight: bold;
+  color: white;
+  transform-origin: center center;
+  z-index: 1; /* Numbers should be behind the ball */
+}
+
+.ball {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 2; /* Ball above numbers */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.betting-form {
+  margin-top: 30px;
+}
+
+.betting-form label {
+  font-size: 1.2em;
+}
+
+.betting-form input,
+.betting-form select {
+  margin: 10px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
